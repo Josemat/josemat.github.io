@@ -1,0 +1,243 @@
+body{
+  margin:0px;
+}
+
+:root{
+/*   Color Palette: */
+--black1:#020300;
+--blueMatte:#005894;
+--greenLime:#32DE8A;
+--lightBlue:#79A9D1;
+--salmon:#D5573B;
+/*   background-color:var(--black1); */
+  color: white;
+  margin-top:3rem;
+}
+#header{
+  display:flex;
+  flex-direction:row;
+  height: 3rem;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  justify-content:flex-end;
+  background-color:var(--salmon);
+}
+nav{
+  width: 90%;
+  background-color:var(--salmon);
+  display: flex;
+  justify-content:flex-end;
+  align-items:center;
+   
+}
+#svgicon{
+  height: 2.5em;
+  width:auto ;
+  padding: 2px;
+  position: static;
+/*   justify-content:start; */
+  top:0px;
+  left: 0px;
+}
+nav a{
+  background-color:black;
+  color: white;
+  border: black solid;
+  border-radius:5px;
+  margin: 10px 20px 10px 10px;
+  padding: 5px;
+  text-decoration:none;
+  font-family:monospace;
+  transition: transform .2s;
+}
+nav a:hover{
+  border:var(--greenLime) solid;
+  transform:scale(1.3);
+}
+section{  
+  left: 0px;
+  top:0px;
+}
+#welcome-section{
+  background-color:var(--black1);
+  margin: auto;
+  display: flex;
+  min-height:100vh;
+  height: 100%;
+  flex-direction:column;
+  justify-content:center;
+  align-items:start;
+  background-image:linear-gradient(180deg, rgba(0, 0, 0, 0), var(--black1)), url("https://cdn.glitch.com/6325cfcc-f559-48fd-bbd8-401681698512%2F20210906_214906(2).png?v=1630980449050");  
+  background-size:50vh;
+  background-repeat:no-repeat;
+  background-position:80% 90% ;
+}
+h1{
+/*   background-color:green; */
+  color:white;
+  font-size:4rem;
+  margin: 0px;
+  padding: 20px;
+  font-family:monospace;
+  transition: 0.5s;
+  
+}
+h1:hover{
+  color:var(--salmon);
+
+}
+h2{
+  color: white;
+  font-size:2rem;
+  margin: 10px;
+  padding: 20px;
+  font-family:monospace;
+
+}
+code{
+  color:white;
+  font-size:1.5rem;
+  width:40vw;
+  padding: 2rem;
+}
+
+.codeBlack{
+  font-size:2rem;
+  padding: 0px;
+  color: var(--blueMatte);
+  transition: 0.5s;
+}
+
+.proy{
+  background-color:var(--blueMatte);
+  height: auto;
+  padding: 0px;
+  
+}
+.h1project{
+  width: 100%;
+  text-align:center;
+}
+
+#projects{
+  padding: 20px;
+  margin: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}  
+.projectImg{
+   width: 300px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.project-tile{
+  width: 300px;
+  height:350px;
+  margin: 30px;
+  border-radius:10px;
+  box-shadow: 1px 4px 13px 8px rgba(0,0,0,0.15);
+  object-fit: contain;
+  overflow: hidden;
+  transition:0.5s;
+  background-color:var(--greenLime);
+}
+.project-tile:hover{
+  box-shadow: 1px 4px 13px 8px rgba(0,0,0,0.45);
+  transform:scale(1.02);  
+}
+
+.project-tile a{
+  color: white;
+  text-decoration:none;
+  transition:0.5s;
+}
+.project-tile a:hover{
+  color: black;
+}
+h3{
+  font-family:monospace;
+  font-size:2rem;
+  text-align:center;
+  margin:0.5rem;
+}
+#contact{
+  background-color:var(--lightBlue);
+  height: 100%;
+  min-height: 70vh;
+}
+.contactos{
+  margin: 4rem 2rem 0 2rem;
+  display: flex;
+  height: 500px;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+}
+.icon{
+  width:200px;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  border-radius: 10px;
+  padding: 10px;
+  transition:.5s;
+  
+}
+.icon:hover{
+  transform: translateY(-30px);
+  box-shadow: 1px 4px 13px 8px rgba(0,0,0,0.45);
+}
+.h2icon{
+  color: var(--lightBlue);
+  color: black;
+  transition: 0.3s;
+}
+.h2icon:hover{
+  color: white;
+}
+a{
+  text-decoration:none;
+}
+footer{
+  text-align:center;
+  padding:20px 0px 0px 0px;
+  background-color:var(--lightBlue);
+  height:4rem;
+}
+em{
+  color:black;
+  margin: 1em;
+}
+@media (max-width:750px) {
+  code{
+    font-size:1.3rem;
+    width:80%;
+    padding: 1rem;
+    
+  }
+  #projects{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:center;
+      align-items:center;
+      margin:  0px 20px 0px 20px;
+  }  
+  .projectImg{
+    width: 100%;
+    object-fit: contain;
+    background-color:white;
+    object-position: center top;
+  }  
+  .project-tile{
+    width: 75vw;
+    height: 75vw;
+  }
+}
