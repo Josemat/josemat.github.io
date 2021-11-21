@@ -229,7 +229,9 @@ em{
     flex-wrap:wrap;
     justify-content:center;
       align-items:center;
-      margin:  0px 20px 0px 20px;
+      /* margin:  0px 20px 0px 20px; */
+      margin: auto;
+    padding: auto;
   }  
   .projectImg{
     width: 100%;
@@ -240,5 +242,11 @@ em{
   .project-tile{
     width: 75vw;
     height: 75vw;
+  }
+  .contactos{
+    height: auto;
+  }
+  h3{
+    margin: auto;
   }
 }
