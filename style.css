@@ -24,15 +24,18 @@ html{
   left: 0px;
   position: fixed;
   justify-content:flex-end;
-  background-color:var(--salmon);
+  background-color:var(--black1);
   z-index: 999;
 }
 nav{
-  width: 90%;
-  background-color:var(--salmon);
+  width: auto;
+  background-color:var(--black1);
   display: flex;
   justify-content:flex-end;
   align-items:center;
+  border: 1em;
+  border-color: white;
+  border-radius: 15px 0px 0px 15px;
    
 }
 #svgicon{
@@ -45,19 +48,23 @@ nav{
   left: 0px;
 }
 nav a{
-  background-color:black;
+  background-color:var(--blueMatte);
+  width: 5rem;
+  height: 1rem;
   color: white;
   border: black solid;
-  border-radius:5px;
+  border-radius:15px;
   margin: 10px 20px 10px 10px;
   padding: 5px;
   text-decoration:none;
   font-family:monospace;
+  text-align: center;
   transition: transform .2s;
 }
 nav a:hover{
   border:var(--greenLime) solid;
   transform:scale(1.3);
+  /* background-color: grey; */
 }
 section{  
   left: 0px;
