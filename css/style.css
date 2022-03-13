@@ -96,12 +96,14 @@ h1{
 }
 p{
   font-family: monospace;
-  opacity: 30%;
+  opacity: 0%;
   color: #020300;
   margin-left: 5px;
+  transition: 0.3s;
 }
-p:hover{
+.project-tile:hover p{
   opacity: 100%;
+  margin: 10px;
 }
 h1:hover{
   color:var(--salmon);
@@ -174,7 +176,13 @@ code{
 }
 .project-tile:hover{
   box-shadow: 1px 4px 13px 8px rgba(0,0,0,0.45);
-  transform:scale(1.1)  translateY(-20px);  
+  transform:scale(1.1)  translateY(-20px);
+}
+.project-tile img{
+  transition: 0.7s;
+}
+.project-tile:hover img{
+margin-top: -120px;
 }
 
 .project-tile a{
@@ -182,8 +190,9 @@ code{
   text-decoration:none;
   transition:0.5s;
 }
-.project-tile a:hover{
+.project-tile:hover a{
   color: black;
+  top: -50px;
 }
 h3{
   font-family:monospace;
