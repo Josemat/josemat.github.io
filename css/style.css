@@ -107,8 +107,8 @@ p{
 }
 h1:hover{
   color:var(--salmon);
-
 }
+
 h2{
   color: white;
   font-size:2rem;
@@ -128,9 +128,10 @@ code{
 .codeBlack{
   font-size:2rem;
   padding: 0px;
-  color: var(--blueMatte);
+  color: white;
   transition: 0.5s;
   line-height:1em;
+  background-color: var(--blueMatte);
 }
 
 .proy{
