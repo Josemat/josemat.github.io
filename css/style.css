@@ -1,5 +1,6 @@
 body{
   margin:0px;
+  background-color: var(--black1);
 }
 html{
   scroll-behavior: smooth;
@@ -17,18 +18,20 @@ html{
 #header{
   display:flex;
   flex-direction:row;
-  height: 3rem;
+  height: 4rem;
   width: 100%;
   top: 0px;
   left: 0px;
   position: fixed;
   justify-content:flex-end;
-  background-color:var(--black1);
+  backdrop-filter: blur(10px);  
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: #0203000f;
   z-index: 999;
 }
 nav{
   width: auto;
-  background-color:var(--black1);
+  /* background-color:var(--black1); */
   display: flex;
   justify-content:flex-end;
   align-items:center;
@@ -46,14 +49,14 @@ nav{
   left: 0px;
 }
 nav a{
-  background-color:var(--blueMatte);
-  width: 5rem;
-  height: 1rem;
+  background-color:rgba(0,0,0,0.15);
+  font-size: 20px;
+  width: auto;
   color: white;
-  border: black solid;
+  border: rgba(0, 0, 0, 0) solid;
   border-radius:10px;
-  margin: 10px 20px 10px 10px;
-  padding: 5px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
   text-decoration:none;
   font-family:monospace;
   text-align: center;
@@ -72,19 +75,32 @@ section{
   margin: auto;
   display: block;
   z-index: 1;
-  height: 100vh;
-  flex-direction:column;
-  justify-content:center;
-  align-items:start;
+  height: 130vh;
   
 }
+.fotoPerfilImg{
+  width: 300px;
+  border-radius: 50%;
+  background-color: #005894;
+}
+.fotoPerfil{
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
 .sobreponer{
-  margin-left: 50px;
+  /* margin-left: 50px; */  
+  margin-top: 5rem;
   position: absolute;
-  width: 75%;
-  top: 60%;
-  left: 40%;
-  transform: translate(-50%, -50%);
+  width: -webkit-fill-available;
+  padding-left:3rem ;
+  /* top: 60%; */
+  /* left: 40%;
+  transform: translate(-50%, -50%); */
   
 }
 h1{
@@ -128,7 +144,6 @@ li{
 .imgLi{
   transform: translateY(25%);
   width: 50px;
-  filter: drop-shadow(0px 0px 1px #9e9e9e);
 }
 h2{
   color: white;
@@ -142,7 +157,7 @@ code{
   margin-top: 2em;
   color:white;
   font-size:2rem;
-  width:40vw;
+  width:60%;
   line-height:1.5em;
   transition: 0.5s;
 }
@@ -275,7 +290,7 @@ em{
   color:black;
   margin: 1em;
 }
-@media (max-width:450px) {
+@media (max-width:500px) {
   #header{
     justify-content: center;
   }
@@ -297,7 +312,7 @@ em{
     
   }
   #particles-js{
-    height: 120vh;
+    height: 170vh;
   }
   .icon{
   box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
@@ -305,26 +320,23 @@ em{
   }
 
 }
-@media (max-width:950px){
-  .sobreponer{
-    height: 100%;
-    margin-left: 20px;
-  }
-}
+
 @media (max-width:850px) {
   code{
     font-size:1.3rem;
     margin-top: 0%;
-    width:80%;
+    width:90%;
     padding: 1rem;
     line-height: auto;
     display:flow-root;
     
     
+  }.sobreponer{
+    padding-left: 1.5rem;
+    margin-top: 2rem;
   }
-  .sobreponer{
-    width: fit-content;
-    left: 45%;
+  .fotoPerfil{
+    flex-direction: column-reverse;
   }
   ul{
     padding-left: 15px;
@@ -371,7 +383,7 @@ em{
   }
   h1{
     font-size: 3rem;
-    margin:0%;
+    margin-bottom: 70px ;
   }
   .h1project{
     width: auto;
