@@ -11,7 +11,6 @@ html{
 --greenLime:#32DE8A;
 --lightBlue:#79A9D1;
 --salmon:#D5573B;
-/*   background-color:var(--black1); */
   color: white;
   margin-top:3rem;
 }
@@ -43,7 +42,6 @@ nav{
   width:auto ;
   padding: 2px;
   position: static;
-/*   justify-content:start; */
   top:0px;
   left: 0px;
 }
@@ -53,7 +51,7 @@ nav a{
   height: 1rem;
   color: white;
   border: black solid;
-  border-radius:15px;
+  border-radius:10px;
   margin: 10px 20px 10px 10px;
   padding: 5px;
   text-decoration:none;
@@ -63,8 +61,7 @@ nav a{
 }
 nav a:hover{
   border:var(--greenLime) solid;
-  transform:scale(1.3);
-  /* background-color: grey; */
+  transform:scale(1.1);
 }
 section{  
   left: 0px;
@@ -75,7 +72,6 @@ section{
   margin: auto;
   display: block;
   z-index: 1;
-  /* min-height:110vh; */
   height: 100vh;
   flex-direction:column;
   justify-content:center;
@@ -92,7 +88,6 @@ section{
   
 }
 h1{
-/*   background-color:green; */
   color:white;
   font-size:4rem;
   margin: 0px 0px 25px -10px;
@@ -133,7 +128,7 @@ li{
 .imgLi{
   transform: translateY(25%);
   width: 50px;
-  filter: drop-shadow(0px 0px 2px #FFFFFF);
+  filter: drop-shadow(0px 0px 1px #9e9e9e);
 }
 h2{
   color: white;
@@ -148,7 +143,6 @@ code{
   color:white;
   font-size:2rem;
   width:40vw;
-  /* padding: 2rem; */
   line-height:1.5em;
   transition: 0.5s;
 }
@@ -212,7 +206,7 @@ code{
   transition: 0.7s;
 }
 .project-tile:hover img{
-margin-top: -120px;
+margin-top: -150px;
 }
 
 .project-tile a{
@@ -305,6 +299,11 @@ em{
   #particles-js{
     height: 120vh;
   }
+  .icon{
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+  margin: 10px 0 10px 0px;
+  }
+
 }
 @media (max-width:950px){
   .sobreponer{
@@ -344,7 +343,6 @@ em{
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
-    /* margin:  0px 20px 0px 20px; */
     margin: auto;
     padding-top: 60px;
   }  
@@ -356,7 +354,17 @@ em{
   }  
   .project-tile{
     width: 75vw;
-    height: 75vw;
+    height: 100%;
+  }
+  .project-tile a{
+    opacity: 100%;
+    color: #020300;
+  }
+  .project-tile p{
+    opacity: 100%;
+  }
+  .project-tile h3{
+    color: #020300;
   }
   .contactos{
     height: auto;
@@ -387,7 +395,6 @@ em{
   text-decoration: none;
   display: block;
   margin-top: 5px;
-  /* margin-bottom: 10px; */
   border-radius: 0px 10px 10px 0px;
   box-shadow: 1px 3px 8px 2px rgba(0,0,0,0.45);
 }
