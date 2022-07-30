@@ -73,7 +73,6 @@ section{
 #particles-js{
   background-color:var(--black1);
   margin: auto;
-  display: block;
   z-index: 1;
   height: 150vh;
   
@@ -95,7 +94,7 @@ section{
 .sobreponer{
   /* margin-left: 50px; */  
   margin-top: 5rem;
-  position: absolute;
+  position: relative;
   width: -webkit-fill-available;
   padding-left:3rem ;
   /* top: 60%; */
